@@ -8,6 +8,7 @@ defmodule Fido.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      Fido.Repo
       # Starts a worker by calling: Fido.Worker.start_link(arg)
       # {Fido.Worker, arg},
     ]
