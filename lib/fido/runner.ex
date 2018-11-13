@@ -6,7 +6,7 @@ defmodule Fido.Runner do
   alias Fido.Queue
   alias Fido.RawProduct
 
-  @interval 10_000
+  @interval 500
 
   def execute(_job = %{url: url}) do
     # TODO put data access behind a context
