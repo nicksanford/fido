@@ -44,9 +44,8 @@ defmodule Fido.Runner do
     beginning_time = System.monotonic_time(:millisecond)
 
     # TODO: BEGIN This could be extracted out into its own work module using MFA
-    # Pull work if there is work to do
+    # Pull work if there is work to do and execute it.
     with {:ok, job} <- Queue.dequeue(work_queue_name), do: execute(job)
-
     # TODO: END
 
     end_time = System.monotonic_time(:millisecond)
