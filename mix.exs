@@ -25,7 +25,8 @@ defmodule Fido.MixProject do
       {:httpoison, "~> 1.4"},
       {:sweet_xml, "~> 0.6.5"},
       {:ecto_sql, "~> 3.0"},
-      {:postgrex, ">= 0.0.0"}
+      {:postgrex, ">= 0.0.0"},
+      {:distillery, "~> 2.0"}
     ]
   end
 end
