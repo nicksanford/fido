@@ -22,6 +22,9 @@ defmodule Fido.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:plug, "~> 1.6"},
+      {:plug_cowboy, "~> 2.0"},
+      {:cowboy, "~> 2.6"},
       {:httpoison, "~> 1.4"},
       {:sweet_xml, "~> 0.6.5"},
       {:ecto_sql, "~> 3.0"},

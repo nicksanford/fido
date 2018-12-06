@@ -10,7 +10,8 @@ defmodule Fido.Application do
     children = [
       Fido.Repo,
       {Fido.Queue, Fido.RawProduct},
-      {Fido.Runner, Fido.RawProduct}
+      {Fido.Runner, Fido.RawProduct},
+      Plug.Cowboy.child_spec(scheme: :http, plug: FidoWeb.Router, options: [port: 4001])
 
 
       # Starts a worker by calling: Fido.Worker.start_link(arg)

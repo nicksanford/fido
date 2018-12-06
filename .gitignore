@@ -25,3 +25,4 @@ fido-*.tar
 *.swp
 *.swo
 *.swn
+*/*secret*
